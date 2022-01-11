@@ -37,7 +37,8 @@ h1{
 }
 
 .rock-photo:hover{
-    
+    height:150;
+    width:auto;
 }
 
 .rock-photo2 img{
