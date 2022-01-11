@@ -37,3 +37,13 @@ h1{
     left:10%;
    
 }
+
+#score-area p{
+    display:inline;
+    font-family: montserrat, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    position:absolute;
+    bottom: 70px;
+    margin:0 0 0 200px;
+
+}
