@@ -28,6 +28,18 @@ h1{
     right:10%;
 }
 
+.rock-photo{
+    cursor: pointer;
+}
+
+.rock-photo2{
+    cursor: pointer;
+}
+
+.rock-photo:hover{
+    
+}
+
 .rock-photo2 img{
     height:150px;
     width:auto;
