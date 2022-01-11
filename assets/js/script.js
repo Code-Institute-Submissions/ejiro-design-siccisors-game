@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(){
-    let buttons= document.ElementbyTagNanme("button")
-    
-
+    let buttons= document.getElementbyTagNanme("button")
+    let image= document.getElementsByTagName("img")
+    let score= document.getElementById("score-area")
 })
 
 function playGame(){
