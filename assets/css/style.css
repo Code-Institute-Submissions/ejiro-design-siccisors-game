@@ -1,2 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
 
+#content{
+    margin:auto;
+    width:auto;
+    height:500px;
+    width:800px;
+    background-color: aqua;
+}
+
+h1{
+    font-family: montserrat, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.rock-photo img{
+    height:150px;
+    width:auto;
+    column-count: 2;
+
+}
