@@ -10,6 +10,20 @@
     position:relative;
     padding:0;
 }
+
+/* add styles to button */
+
+.options{
+    margin:20px 0 0 20px;
+    
+}
+.options button{
+    height: 40px;
+    width: 40px;
+    cursor:pointer;
+}
+
+
 /* add styles to header */
 h1{
     font-family: montserrat, Arial, Helvetica, sans-serif;
