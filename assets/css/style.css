@@ -8,6 +8,7 @@
     width:800px;
     background-color: rgb(229, 248, 248);
     position:relative;
+    padding:0;
 }
 /* add styles to header */
 h1{
@@ -38,12 +39,15 @@ h1{
    
 }
 
-#score-area p{
-    display:inline;
+#score-area{
     font-family: montserrat, Arial, Helvetica, sans-serif;
     font-size: 18px;
     position:absolute;
-    bottom: 70px;
-    margin:0 0 0 200px;
+    bottom: 60px;
+    left:250px;
+}
 
+#score-area p{
+    display:inline;
+    padding:30px 0 0 20px;
 }
