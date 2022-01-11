@@ -1,4 +1,8 @@
-document.addEventListener(DOMException)
+document.addEventListener("DOMContentLoaded", function(){
+    let buttons= document.ElementbyTagNanme("button")
+    
+
+})
 
 function playGame(){
 
@@ -17,5 +21,5 @@ function decrementScore(){
 }
 
 function drawScore(){
-    
+
 }
