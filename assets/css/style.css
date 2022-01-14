@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
 
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
 /* add styles to content area */
 #content{
     margin:auto;
+    overflow:hidden;
     width:auto;
     height:500px;
     width:800px;
     background-color: rgb(229, 248, 248);
     position:relative;
-    padding:0;
+    padding:0 2rem;
+    text-align: center;
 }
 
 /* add styles to button */
@@ -49,49 +56,6 @@ h1{
     position: absolute;
     top:10%;
     margin:0 0 0 200px;
-}
-/* add styles to photos */
-/* .rock-photo3 img{
-    display:none;
-    height:150px;
-    width:auto;
-    padding:30px;
-    position:absolute;
-    top:30%;
-    right:10%;
-} */
-
-.rock-photo img{
-    height:150px;
-    width:auto;
-    padding:30px;
-    position:absolute;
-    top:30%;
-    right:10%;
-}
-
-.rock-photo{
-    cursor: pointer;
-}
-
-.rock-photo2{
-    cursor: pointer;
-}
-
-.rock-photo:hover{
-    height:150;
-    width:auto;
-}
-
-.rock-photo2 img{
-    height:150px;
-    width:auto;
-    column-count: 2;
-    padding:30px;
-    position:absolute;
-    top:30%;
-    left:10%;
-   
 }
 /* score area */
 
