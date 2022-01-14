@@ -14,13 +14,28 @@
 /* add styles to button */
 
 .options{
+    padding:30px;
+    position:absolute;
+    top:30%;
+    right:10%;
     margin:20px 0 0 20px;
     transition: 100ms;
     
 }
 .options button{
-    height: 40px;
-    width: 40px;
+    border: none;
+    background-color:none;
+    text-align: center;
+    height:50px;
+    width:auto;
+    cursor:pointer;
+}
+
+.options button i{
+    border: none;
+    background-color:none;
+    height:100px;
+    width:auto;
     cursor:pointer;
 }
 
@@ -36,7 +51,7 @@ h1{
     margin:0 0 0 200px;
 }
 /* add styles to photos */
-.rock-photo3 img{
+/* .rock-photo3 img{
     display:none;
     height:150px;
     width:auto;
@@ -44,7 +59,7 @@ h1{
     position:absolute;
     top:30%;
     right:10%;
-}
+} */
 
 .rock-photo img{
     height:150px;
