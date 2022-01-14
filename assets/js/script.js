@@ -1,41 +1,31 @@
-document.addEventListener("DOMContentLoaded", function(){
-   let [won, draw, lost,] = [0,0,0];
-   let score = document.getElementById("score-area")
-//    lets choose options using switch case
-let options;
-let optionChoose = [paper, scissors, rock];
-for (let i of optionChoose)
+let score = document.getElementById("score-area")
+let draw = document.getElementsByClassId("draw")
+let lost = documen.getElementsByClassId("lost")
+let won = document.getElementById("won")
+let result = {
+    player: 0,
+    computer:0,
+}
+// play game
+function playGAme(event){
+    console.log(event.target.id)
 
-switch (optionChoose) {
-  case 0:
-    options = 'paper';
-    break;
-  case 1:
-    options = 'scissors';
-    break;
-  case 2:
-    options = 'rock';
-    break;
-  default:
-    options = 'wrong. choice';
-    }
+}
+// event listener
+score-area.Foreach(score-area => score-area.addEventListener)
 
-function playGame(){
+function checkScore() {
 
 }
 
-function checkScore(){
+function incrementScore() {
 
 }
 
-function incrementScore(){
+function decrementScore() {
 
 }
 
-function decrementScore(){
-
-}
-
-function drawScore(){
+function drawScore() {
 
 }
