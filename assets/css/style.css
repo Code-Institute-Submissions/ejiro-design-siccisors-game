@@ -51,22 +51,43 @@
 }
 
 /* style the restart button */
-#replay-btn{
+.replay-btn{
     display:inline;
-    background: var(--light-color);
-    color:#f5f5dc;
-    padding:2px 2px;
-    font-size: 1px;
+    color:rgb(3, 3, 3);
+    padding:6px 6px;
+    font-size: 16px;
     cursor: pointer;
+    outline:none;
+    border:none;
+    background-color:rgba(168, 232, 236, 0.582) ;
+}
+
+ .replay-btn:hover{
+    color:rgb(255, 254, 254);
+    background:rgb(1, 127, 136);
 }
 
 /* add styles to header */
-h1{
-    font-family: montserrat, Arial, Helvetica, sans-serif;
-    position: absolute;
-    top:10%;
-    margin:0 0 0 200px;
+.header{
+    text-align: center;
+    margin:3% 0;
+
 }
+
+.header h1{
+    font-family: montserrat, Arial, Helvetica, sans-serif;
+    top:10%;
+    margin:3% 0;
+    text-align: center;
+}
+
+/* the game options area*/
+.options{
+    /* column-count: ; */
+    column-count: 3;
+    column-gap: 40px;
+}
+
 /* score area */
 
 #score-area{
