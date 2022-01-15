@@ -34,7 +34,9 @@
 }
 
 .options :hover{
-    transform: scale(1.2)
+    transform: scale(1.2);
+    color:rgb(229, 248, 248);
+    background-color: black;
 }
 
 
