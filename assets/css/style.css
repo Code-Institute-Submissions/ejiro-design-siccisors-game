@@ -83,15 +83,12 @@
 
 /* the game options area*/
 .options{
-    /* column-count: ; */
-    column-count: 3;
-    column-gap: 150px;
-    margin-top: 5%;
+    margin-top:10%;
+    padding:0 18% 50% 0 ;
     text-align: center;
-}
-
-.option i{
-    font-size: 20px;
+    align-items: center;
+    
+   
 }
 
 /* score area */
