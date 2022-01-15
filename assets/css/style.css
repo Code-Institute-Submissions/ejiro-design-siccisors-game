@@ -19,36 +19,24 @@
 }
 
 /* add styles to button */
-
 .options{
-    padding:30px;
-    position:absolute;
-    top:30%;
-    right:10%;
-    margin:20px 0 0 20px;
-    transition: 100ms;
-    
-}
-.options button{
-    border: none;
-    background-color:none;
+    margin-top:8%;
+    padding:0 3% 0% 0 ;
     text-align: center;
-    height:50px;
-    width:auto;
     cursor:pointer;
+}
+.options i:first-child{
+    margin-right: 40px;
 }
 
-.options button i{
-    border: none;
-    background-color:none;
-    height:100px;
-    width:auto;
-    cursor:pointer;
+.options i:last-child{
+    margin-left: 40px;
 }
 
 .options :hover{
     transform: scale(1.2)
 }
+
 
 /* style the restart button */
 .replay-btn{
@@ -79,20 +67,6 @@
     top:10%;
     margin:3% 0;
     text-align: center;
-}
-
-/* the game options area*/
-.options{
-    margin-top:8%;
-    padding:0 15% 0% 0 ;
-    text-align: center;
-}
-.options i:first-child{
-    margin-right: 40px;
-}
-
-.options i:last-child{
-    margin-left: 40px;
 }
 
 /* score area */
