@@ -83,12 +83,16 @@
 
 /* the game options area*/
 .options{
-    margin-top:10%;
-    padding:0 18% 50% 0 ;
+    margin-top:8%;
+    padding:0 15% 0% 0 ;
     text-align: center;
-    align-items: center;
-    
-   
+}
+.options i:first-child{
+    margin-right: 40px;
+}
+
+.options i:last-child{
+    margin-left: 40px;
 }
 
 /* score area */
