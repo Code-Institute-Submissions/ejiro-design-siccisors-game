@@ -13,4 +13,4 @@ console.log(event.target.id)
 }
 // event listeners
 for(let choice of choices)
-    addEventListener("click", play)
+    addEventListener("click", startGame)
