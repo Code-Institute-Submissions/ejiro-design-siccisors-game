@@ -9,9 +9,13 @@ const scoreboard = {
 
 // start game
 function startGame(event){
-console.log(event.target.id)
+    replay.style.display = "inline-block"
+const playerGame = event.target.id
 }
 // event listeners
 for(let choice of choices){
     choice.addEventListener("click", startGame)
 }
+
+
+

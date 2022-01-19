@@ -43,7 +43,7 @@
 
 /* style the restart button */
 .replay-btn{
-    display:inline;
+    display:none;
     color:rgb(3, 3, 3);
     padding:6px 6px;
     font-size: 16px;
