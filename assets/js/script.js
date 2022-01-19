@@ -11,11 +11,17 @@ const scoreboard = {
 function startGame(event){
     replay.style.display = "inline-block"
 const playerGame = event.target.id
+const computerGame = getcomputerGame()
 }
+// get computer game
+function computerGame(){
+
+
+}
+
 // event listeners
 for(let choice of choices){
     choice.addEventListener("click", startGame)
 }
-
 
 
