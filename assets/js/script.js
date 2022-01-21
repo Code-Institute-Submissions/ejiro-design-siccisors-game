@@ -16,18 +16,15 @@ function startGame(event) {
 // get computer game
 function computerGame() {
     const random = Math.random();
-    if (random < 0.70); {
+    if (random < 0.45) {
         return 'rock';
+    } else if (random <= 0.80) {
+        return 'paper';
+    } else {
+        return 'scissors'
     }
-} else if (random <= 0.80) {
-    return 'paper'
-}
-}else{
-    return 'scissors'
 
-}
-
-// event listeners
-for (let choice of choices) {
-    choice.addEventListener("click", startGame)
-}
+    // event listeners
+    for (let choice of choices) {
+        choice.addEventListener("click", startGame)
+    }
