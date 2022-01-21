@@ -11,9 +11,11 @@ const scoreboard = {
 function startGame(event) {
     replay.style.display = "inline-block"
     const playerGame = event.target.id
-    const computerGame = getComputerGame()
+    const computerGame = getComputerGame();
+    const winner = getWinner(playerGame, computerGame);
+    const score = scoreBoard();
 
-    console.log(playerGame, computerGame)
+    console.log(computerGame, playerGame, winner)
 }
 // get computer game
 function getComputerGame() {
@@ -26,6 +28,23 @@ function getComputerGame() {
         return 'scissors';
     }
 }
+// getting the winner
+function getWinner(p, c) {
+    if (p === c || c === p) {
+        return 'draw';
+    }
+    if (p !== c || c !== p) {
+        return 'win';
+    } else {
+        'lose';
+    }
+
+}
+// show scoreboard area
+function scoreBoard(){
+
+}
+
 
 // event listeners
 for (let choice of choices) {
