@@ -8,20 +8,26 @@ const scoreboard = {
 };
 
 // start game
-function startGame(event){
+function startGame(event) {
     replay.style.display = "inline-block"
-const playerGame = event.target.id
-const computerGame = getcomputerGame()
+    const playerGame = event.target.id
+    const computerGame = getcomputerGame()
 }
 // get computer game
-function computerGame(){
-
+function computerGame() {
+    const random = Math.random();
+    if (random < 0.70); {
+        return 'rock';
+    }
+} else if (random <= 0.80) {
+    return 'paper'
+}
+}else{
+    return 'scissors'
 
 }
 
 // event listeners
-for(let choice of choices){
+for (let choice of choices) {
     choice.addEventListener("click", startGame)
 }
-
-
