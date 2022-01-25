@@ -8,6 +8,10 @@ const pwon = document.getElementById("#won")
 const pdraw = document.getElementById("#draw")
 const plost = document.getElementById("#lost")
 
+// add another score variable
+const pscore1 = 0
+const pscore2 = 0
+
 // start game
 function startGame(event) {
     replay.style.display = "inline-block"
