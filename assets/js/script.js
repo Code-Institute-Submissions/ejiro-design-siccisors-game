@@ -1,11 +1,12 @@
 const choices = document.getElementsByClassName("choice")
 const score = document.getElementById("score-area")
 const replay = document.getElementById("replay")
-const scoreboard = {
-    draw: 0,
-    win: 0,
-    lost: 0
-};
+
+// buttons that will increment score
+
+const pwon = document.getElementById("#won")
+const pdraw = document.getElementById("#draw")
+const plost = document.getElementById("#lost")
 
 // start game
 function startGame(event) {
