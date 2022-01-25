@@ -48,11 +48,15 @@ function getWinner(p, c) {
 
 }
 // show scoreboard area
-function scoreBoard(){
-
+function scoreBoard() {
+    if (!gameover)
+        pscore1 += 1;
+        pwon.textContent = pscore1;
+    if (pscore1 === limit){
+        
+    }
 
 }
-
 
 // event listeners
 for (let choice of choices) {
