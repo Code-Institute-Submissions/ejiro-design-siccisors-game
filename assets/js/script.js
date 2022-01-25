@@ -1,16 +1,16 @@
 const choices = document.getElementsByClassName("choice")
-const score = document.getElementById("score-area")
+const score = document.getElementsById("score-area")
 const replay = document.getElementById("replay")
-
-// buttons that will increment score
-
-const pwon = document.getElementById("#won")
-const pdraw = document.getElementById("#draw")
-const plost = document.getElementById("#lost")
 
 // add another score variable
 const pscore1 = 0
 const pscore2 = 0
+
+// updating player score by setting the span tag
+const pwon = document.getElementById("#won")
+const pdraw = document.getElementById("#draw")
+const plost = document.getElementById("#lost")
+
 
 // start game
 function startGame(event) {
