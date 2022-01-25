@@ -3,8 +3,10 @@ const score = document.getElementsById("score-area")
 const replay = document.getElementById("replay")
 
 // add another score variable
-const pscore1 = 0
-const pscore2 = 0
+const pscore1 = 0;
+const pscore2 = 0;
+const gameover = false;
+const limit = 100;
 
 // updating player score by setting the span tag
 const pwon = document.getElementById("#won")
@@ -47,6 +49,7 @@ function getWinner(p, c) {
 }
 // show scoreboard area
 function scoreBoard(){
+
 
 }
 
