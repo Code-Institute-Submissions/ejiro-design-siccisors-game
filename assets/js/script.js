@@ -1,18 +1,10 @@
 const choices = document.getElementsByClassName("choice")
-const score = document.getElementsById("score-area")
 const replay = document.getElementById("replay")
-
-// add another score variable
-const pscore1 = 0;
-const pscore2 = 0;
-const gameOver = false;
-const limit = 100;
-
-// updating player score by setting the span tag
-const pwon = document.getElementById("#won")
-const pdraw = document.getElementById("#draw")
-const plost = document.getElementById("#lost")
-
+const scoreBoard ={
+    won : 0,
+    draw : 0,
+    lost : 0
+}
 
 // start game
 function startGame(event) {
@@ -20,9 +12,8 @@ function startGame(event) {
     const playerGame = event.target.id
     const computerGame = getComputerGame();
     const winner = getWinner(playerGame, computerGame);
-    const score = scoreBoard();
 
-    console.log(computerGame, playerGame, winner)
+    console.log(computerGame, playerGame, winner, incrementScore)
 }
 // get computer game
 function getComputerGame() {
@@ -47,17 +38,20 @@ function getWinner(p, c) {
     }
 
 }
-// show scoreboard area
-function scoreBoard() {
-    if (!gameOver)
-        pscore1 += 1;
-        pwon.textContent = pscore1;
-    if (pscore1 === limit){
-        pwon.classList.add("winner")
-        gameOver = true;
+// show scoreboard area and increment score
+function incrementScore(winner){
+    if(winner === 'win'){
+        scoreBoard.won++;
     }
+    else if (winner === "lose"){
+        scoreBoard.lost++;
+    }
+    else{
+        scoreBoard.draw++;
 
+    }
 }
+
 
 // event listeners
 for (let choice of choices) {
