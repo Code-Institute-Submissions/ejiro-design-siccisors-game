@@ -1,10 +1,5 @@
 const choices = document.getElementsByClassName("choice")
 const replay = document.getElementById("replay")
-// const scoreBoard ={
-//     won : 0,
-//     draw : 0,
-//     lost : 0
-// }
 
 // start game
 function startGame(event) {
@@ -31,17 +26,24 @@ function getComputerGame() {
 }
 // getting the winner
 function getWinner(p, c) {
-    if (p === c || c === p) {
+    if (p === c || !c === p) {
         return 'draw';
-    }
-    if (c === p){
-        return 'win';
-    }
-
-    if (p !== c || c !== p) {
-        return 'win';
-    } else {
-        'lose';
+    } else if (p === 'rock') {
+        if (c === 'paper') {
+            return "win"
+        }
+    } else if (p === "paper") {
+        if (c === "scissors") {
+            return "win"
+        } else {
+            return "lose"
+        }
+    } else if (p === 'scissors') {
+        if (c === 'rock') {
+            return "win"
+        } else {
+            return "lose"
+        }
     }
 
 }
