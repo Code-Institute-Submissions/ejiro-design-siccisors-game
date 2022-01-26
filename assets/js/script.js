@@ -12,8 +12,11 @@ function startGame(event) {
     const playerGame = event.target.id
     const computerGame = getComputerGame();
     const winner = getWinner(playerGame, computerGame);
+    const draw1 = incrementDraw();
+    const won1 = incrementWon();
+    const lost1 = incrementLost();
 
-    console.log(computerGame, playerGame, winner, incrementDraw, incrementLost, incrementWon)
+    console.log(computerGame, playerGame, winner, draw1, won1, lost1)
 }
 // get computer game
 function getComputerGame() {
@@ -29,42 +32,44 @@ function getComputerGame() {
 // getting the winner
 function getWinner(p, c) {
     if (p === c || c === p) {
-        incrementDraw(), incrementWon();
-        return 'draw'; 
+        return 'draw';
     }
+    if (c === p){
+        return 'win';
+    }
+
     if (p !== c || c !== p) {
         return 'win';
     } else {
-        incrementLost()
         'lose';
     }
 
 }
 // show scoreboard area and increment score
-function incrementWon(){
-    let wonScore = parseInt(document.getElementsById("won").innerText)
-    document.getElementsById("won").innerText = ++wonScore
+function incrementWon() {
+    let wonScore = parseInt(document.getElementById("won").innerText)
+    document.getElementById("won").innerText = ++wonScore
 }
 
-function incrementDraw(){
-    let drawScore = parseInt(document.getElementsById("draw").innerText)
-    document.getElementsById("draw").innerText = ++drawScore
+function incrementDraw() {
+    let drawScore = parseInt(document.getElementById("draw").innerText)
+    document.getElementById("draw").innerText = ++drawScore;
 }
 
-function incrementLost(){
-    let lostScore = parseInt(document.getElementsById("lost").innerText)
-    document.getElementsById("lost").innerText = ++lostScore
+function incrementLost() {
+    let lostScore = parseInt(document.getElementById("lost").innerText)
+    document.getElementById("lost").innerText = ++lostScore;
 }
-    // if(winner === 'win'){
-    //     scoreBoard.won++;
-    // }
-    // else if (winner === "lose"){
-    //     scoreBoard.lost--;
-    // }
-    // else{
-    //     scoreBoard.draw++;
+// if(winner === 'win'){
+//     scoreBoard.++won;
+// }
+// else if (winner === "lose"){
+//     scoreBoard.++lost;
+// }
+// else{
+//     scoreBoard.++draw;
 
-    // }
+// }
 
 
 
