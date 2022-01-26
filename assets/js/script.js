@@ -7,11 +7,12 @@ function startGame(event) {
     const playerGame = event.target.id
     const computerGame = getComputerGame();
     const winner = getWinner(playerGame, computerGame);
-    const draw1 = incrementDraw();
-    const won1 = incrementWon();
-    const lost1 = incrementLost();
+    // const draw1 = incrementDraw();
+    // const won1 = incrementWon();
+    // const lost1 = incrementLost();
+    const checkScore = checkScore();
 
-    console.log(computerGame, playerGame, winner, draw1, won1, lost1)
+    console.log(computerGame, playerGame, winner, checkScore)
 }
 // get computer game
 function getComputerGame() {
@@ -26,7 +27,7 @@ function getComputerGame() {
 }
 // getting the winner
 function getWinner(p, c) {
-    if (p === c || !c === p) {
+    if (p === c) {
         return 'draw';
     } else if (p === 'rock') {
         if (c === 'paper') {
@@ -36,21 +37,22 @@ function getWinner(p, c) {
         if (c === "scissors") {
             return "win"
         } else {
-            return "lose"
+            return "lost"
         }
     } else if (p === 'scissors') {
         if (c === 'rock') {
             return "win"
         } else {
-            return "lose"
+            return "lost"
         }
     }
 
 }
 // show scoreboard area and increment score
 function incrementWon() {
-    let wonScore = parseInt(document.getElementById("won").innerText)
-    document.getElementById("won").innerText = ++wonScore
+        let wonScore = parseInt(document.getElementById("won").innerText)
+        document.getElementById("won").innerText = ++wonScore
+   
 }
 
 function incrementDraw() {
@@ -59,21 +61,20 @@ function incrementDraw() {
 }
 
 function incrementLost() {
-    let lostScore = parseInt(document.getElementById("lost").innerText)
-    document.getElementById("lost").innerText = ++lostScore;
+        let lostScore = parseInt(document.getElementById("lost").innerText)
+        document.getElementById("lost").innerText = ++lostScore;
+    
 }
-// if(winner === 'win'){
-//     scoreBoard.++won;
-// }
-// else if (winner === "lose"){
-//     scoreBoard.++lost;
-// }
-// else{
-//     scoreBoard.++draw;
 
-// }
+function checkScore(){
+    if( === "won"){
+        incrementWon;
+    }
+    else{
+        incrementLost;
+    }
 
-
+}
 
 // event listeners
 for (let choice of choices) {
