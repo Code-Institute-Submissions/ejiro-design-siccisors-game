@@ -67,13 +67,18 @@ function incrementLost() {
 }
 
 function checkScore(){
-    if( === "won"){
-        incrementWon;
+    if( winner === "won"){
+        alert ('you won');
+        incrementWon();
     }
     else{
-        incrementLost;
+        alert ('you lost');
+        incrementLost();
     }
-
+    if(winner === 'draw'){
+        alert ('its a draw, play again');
+        incrementDraw()
+    }
 }
 
 // event listeners
