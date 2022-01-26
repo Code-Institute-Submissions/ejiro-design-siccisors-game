@@ -5,7 +5,7 @@ const replay = document.getElementById("replay")
 // add another score variable
 const pscore1 = 0;
 const pscore2 = 0;
-const gameover = false;
+const gameOver = false;
 const limit = 100;
 
 // updating player score by setting the span tag
@@ -49,11 +49,12 @@ function getWinner(p, c) {
 }
 // show scoreboard area
 function scoreBoard() {
-    if (!gameover)
+    if (!gameOver)
         pscore1 += 1;
         pwon.textContent = pscore1;
     if (pscore1 === limit){
-        
+        pwon.classList.add("winner")
+        gameOver = true;
     }
 
 }
