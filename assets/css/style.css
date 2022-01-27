@@ -5,6 +5,10 @@
     padding:0;
     margin:0;
 }
+/* add color to the body */
+body{
+    background-color: rgb(186, 204, 204);
+}
 /* add styles to content area */
 #content{
     margin:auto;
@@ -12,7 +16,7 @@
     max-width:11000px;
     height:500px;
     width:800px;
-    background-color: rgb(229, 248, 248);
+    background-color: rgb(190, 210, 220);
     position:relative;
     top:30%;
     padding:0 2rem;
