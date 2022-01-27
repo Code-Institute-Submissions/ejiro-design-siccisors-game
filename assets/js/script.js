@@ -9,7 +9,7 @@ function startGame(event) {
     const winner = getWinner(playerGame, computerGame);
     const checkScores = checkScore(winner);
 
-    console.log(computerGame, playerGame, winner, checkScores, replayGame )
+    // console.log(computerGame, playerGame, winner, checkScores, replayGame )
 }
 // get computer game
 function getComputerGame() {
@@ -74,14 +74,10 @@ function checkScore(winner) {
 }
 // replay button
 function replayGame(){
-    console.log('replay Game')
+    // console.log('replay Game')
     document.getElementById("won").innerText=0
     document.getElementById("draw").innerText=0
     document.getElementById("lost").innerText=0
-    // incrementDraw.winner = 0;
-    // incrementLost.winner = 0;
-    // incrementWon.winner = 0;
-
 }
 
 // event listeners
