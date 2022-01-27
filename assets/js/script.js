@@ -7,9 +7,6 @@ function startGame(event) {
     const playerGame = event.target.id
     const computerGame = getComputerGame();
     const winner = getWinner(playerGame, computerGame);
-    // const draw1 = incrementDraw();
-    // const won1 = incrementWon();
-    // const lost1 = incrementLost();
     const checkScores = checkScore(winner);
 
     console.log(computerGame, playerGame, winner, checkScores)
@@ -50,9 +47,8 @@ function getWinner(p, c) {
 }
 // show scoreboard area and increment score
 function incrementWon() {
-        let wonScore = parseInt(document.getElementById("won").innerText)
-        document.getElementById("won").innerText = ++wonScore
-   
+    let wonScore = parseInt(document.getElementById("won").innerText)
+    document.getElementById("won").innerText = ++wonScore
 }
 
 function incrementDraw() {
@@ -61,25 +57,28 @@ function incrementDraw() {
 }
 
 function incrementLost() {
-        let lostScore = parseInt(document.getElementById("lost").innerText)
-        document.getElementById("lost").innerText = ++lostScore;
-    
+    let lostScore = parseInt(document.getElementById("lost").innerText)
+    document.getElementById("lost").innerText = ++lostScore;
+
 }
 // check the scores for losers and winners
-function checkScore(winner){
-    if(winner === 'win'){
+function checkScore(winner) {
+    if (winner === 'win') {
         incrementWon();
+    } else if (winner === 'draw') {
+        incrementDraw();
+    } else {
+        (winner === 'lost')
+        incrementLost();
     }
-  else if (winner === 'draw'){
-       incrementDraw();
-   }
-   else{
-    (winner === 'lost')
-    incrementLost();
-   }
 }
+
+// replay button
+function replayGame()
+
 
 // event listeners
 for (let choice of choices) {
     choice.addEventListener("click", startGame)
+    replay.addEventListener('click', replayGame)
 }
