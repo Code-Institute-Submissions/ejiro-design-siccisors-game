@@ -10,9 +10,9 @@ function startGame(event) {
     // const draw1 = incrementDraw();
     // const won1 = incrementWon();
     // const lost1 = incrementLost();
-    const checkScore = checkScore();
+    const checkScores = checkScore(winner);
 
-    console.log(computerGame, playerGame, winner, checkScore)
+    console.log(computerGame, playerGame, winner, checkScores)
 }
 // get computer game
 function getComputerGame() {
@@ -65,20 +65,18 @@ function incrementLost() {
         document.getElementById("lost").innerText = ++lostScore;
     
 }
-
-function checkScore(){
-    if( winner === "won"){
-        alert ('you won');
+// check the scores for losers and winners
+function checkScore(winner){
+    if(winner === 'win'){
         incrementWon();
     }
-    else{
-        alert ('you lost');
-        incrementLost();
-    }
-    if(winner === 'draw'){
-        alert ('its a draw, play again');
-        incrementDraw()
-    }
+  else if (winner === 'draw'){
+       incrementDraw();
+   }
+   else{
+    (winner === 'lost')
+    incrementLost();
+   }
 }
 
 // event listeners
