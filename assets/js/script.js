@@ -15,18 +15,18 @@ function startGame(event) {
 function getComputerGame() {
     const random = Math.random();
     if (random < 0.45) {
-        return 'rock';
+        return "rock";
     } else if (random <= 0.80) {
-        return 'paper';
+        return "paper";
     } else {
-        return 'scissors';
+        return "scissors";
     }
 }
 // getting the winner
 function getWinner(p, c) {
     if (p === c) {
-        return 'draw';
-    } else if (p === 'rock') {
+        return "draw";
+    } else if (p === "rock") {
         if (c === 'paper') {
             return "win"
         }
@@ -36,8 +36,8 @@ function getWinner(p, c) {
         } else {
             return "lost"
         }
-    } else if (p === 'scissors') {
-        if (c === 'rock') {
+    } else if (p === "scissors") {
+        if (c === "rock") {
             return "win"
         } else {
             return "lost"
@@ -63,18 +63,17 @@ function incrementLost() {
 }
 // check the scores for losers and winners
 function checkScore(winner) {
-    if (winner === 'win') {
+    if (winner === "win") {
         incrementWon();
-    } else if (winner === 'draw') {
+    } else if (winner === "draw") {
         incrementDraw();
     } else {
-        (winner === 'lost')
+        (winner === "lost")
         incrementLost();
     }
 }
 // replay button
 function replayGame() {
-    // console.log('replay Game')
     document.getElementById("won").innerText = 0
     document.getElementById("draw").innerText = 0
     document.getElementById("lost").innerText = 0
@@ -83,5 +82,5 @@ function replayGame() {
 // event listeners
 for (let choice of choices) {
     choice.addEventListener("click", startGame)
-    replay.addEventListener('click', replayGame)
+    replay.addEventListener("click", replayGame)
 }
