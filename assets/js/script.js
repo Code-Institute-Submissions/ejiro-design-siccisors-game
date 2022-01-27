@@ -73,11 +73,11 @@ function checkScore(winner) {
     }
 }
 // replay button
-function replayGame(){
+function replayGame() {
     // console.log('replay Game')
-    document.getElementById("won").innerText=0
-    document.getElementById("draw").innerText=0
-    document.getElementById("lost").innerText=0
+    document.getElementById("won").innerText = 0
+    document.getElementById("draw").innerText = 0
+    document.getElementById("lost").innerText = 0
 }
 
 // event listeners
