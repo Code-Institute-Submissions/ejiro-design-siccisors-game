@@ -42,8 +42,7 @@ body {
 
 .options :hover {
     transform: scale(1.2);
-    color: rgb(229, 248, 248);
-    background-color: black;
+    color: rgb(99, 131, 131);
 }
 
 
