@@ -105,7 +105,7 @@ body {
     #score-area {
         position: relative;
         left: 0;
-        top: 30%
+        top: 25%
     }
 
     @media (max-width: 500px) {
