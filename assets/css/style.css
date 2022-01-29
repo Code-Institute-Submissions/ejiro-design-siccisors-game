@@ -17,7 +17,7 @@ body {
     overflow: visible;
     height: 500px;
     width: 800px;
-    background-color: rgb(173, 71, 20);
+    background-color: rgb(190, 210, 220);
     position: relative;
     top: 10%;
     padding: 0 2rem;
@@ -97,15 +97,16 @@ body {
         font-size: 70px;
         padding: 0;
     }
+
     #content {
         height: 500;
         width: auto;
     }
-    #score-area{
-        position: relative;
-        left:0;
-        top:30%
 
+    #score-area {
+        position: relative;
+        left: 0;
+        top: 30%
     }
 
     @media (max-width: 500px) {
@@ -137,21 +138,21 @@ body {
 
         .header h1 {
             text-align: center;
-           
+
         }
 
-        #score-area{
+        #score-area {
             position: relative;
-            left:0;
-            top:20%
+            left: 0;
+            top: 20%
         }
     }
 
-    @media (max-width: 280px) {
-
-        #score-area{
+    @media (max-width: 280px){
+        #score-area {
             position: relative;
-            left:0;
-            top:15%
+            left: 0;
+            top: 15%;
         }
     }
+}
