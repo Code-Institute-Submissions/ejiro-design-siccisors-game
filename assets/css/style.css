@@ -1,193 +1,157 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
 
-*{
-    box-sizing:border-box;
-    padding:0;
-    margin:0;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
+
 /* add color to the body */
-body{
-    background-color: rgb(186, 204, 204);
-}
-/* add styles to content area */
-#content{
-    margin:auto;
-    overflow:hidden;
-    height:500px;
-    width:800px;
+body {
     background-color: rgb(190, 210, 220);
-    position:relative;
-    top:30%;
-    padding:0 2rem;
+}
+
+/* add styles to content area */
+#content {
+    margin: auto;
+    overflow: visible;
+    height: 500px;
+    width: 800px;
+    background-color: rgb(173, 71, 20);
+    position: relative;
+    top: 10%;
+    padding: 0 2rem;
     text-align: center;
 }
 
 /* add styles to button */
-.options{
-    margin-top:8%;
-    padding:0 3% 0% 0 ;
+.options {
+    margin-top: 20%;
+    padding: 0 3% 0% 0;
     text-align: center;
-    cursor:pointer;
+    cursor: pointer;
 }
-.options i:first-child{
+
+.options i:first-child {
     margin-right: 40px;
 }
 
-.options i:last-child{
+.options i:last-child {
     margin-left: 40px;
 }
 
-.options :hover{
+.options :hover {
     transform: scale(1.2);
-    color:rgb(229, 248, 248);
+    color: rgb(229, 248, 248);
     background-color: black;
 }
 
 
 /* style the restart button */
-.replay-btn{
-    display:none;
-    color:rgb(3, 3, 3);
-    padding:6px 6px;
+.replay-btn {
+    display: none;
+    color: rgb(3, 3, 3);
+    padding: 6px 6px;
     font-size: 16px;
     cursor: pointer;
-    outline:none;
-    border:none;
-    background-color:rgba(168, 232, 236, 0.582) ;
+    outline: none;
+    border: none;
+    background-color: rgba(168, 232, 236, 0.582);
 }
 
- .replay-btn:hover{
-    color:rgb(255, 254, 254);
-    background:rgb(1, 127, 136);
+.replay-btn:hover {
+    color: rgb(255, 254, 254);
+    background: rgb(1, 127, 136);
 }
 
 /* add styles to header */
-.header{
+.header {
     text-align: center;
-    margin:3% 0;
+    margin: 8% 0;
 }
 
-.header h1{
+.header h1 {
     font-family: montserrat, Arial, Helvetica, sans-serif;
-    top:10%;
-    margin:3% 0;
+    margin: 3% 0;
     text-align: center;
 }
 
 /* score area */
 
-#score-area{
+#score-area {
     font-family: montserrat, Arial, Helvetica, sans-serif;
     font-size: 18px;
-    position:absolute;
+    position: absolute;
     bottom: 60px;
-    left:250px;
+    left: 250px;
 }
 
-#score-area p{
-    display:inline;
-    padding:30px 0 0 20px;
+#score-area p {
+    display: inline;
+    padding: 30px 0 0 20px;
 }
+
 /* media queries */
-@media (max-width: 768px){
-    .content{
-        width:100%;
+@media (max-width: 700px) {
+    .options i {
+        font-size: 70px;
+        padding: 0;
     }
-}
-
-@media (max-width: 600px ){
-  .options{
-      color:darkcyan;
-  }  
-
-} 
-
-@media (max-width: 500px ){ 
-    .header{
-        float:left;
-    }
-    .header h1{
-        text-align: center;
-        font-size: 33px;
-    }
-    .content{
-        float:left;
-    }
-    .options{
-        float: right;
-        position: relative;
-        top:3%;
-        right:40%;
-    }
-    .replay-btn{
-        position:relative;
-        top:60%;
-    }
-    #score-area{
-        float:left;
-        margin-left: -20%;
-    }
-}   
-
-@media (max-width: 320px ){
-    #content{
-        height: 500px;
+    #content {
+        height: 500;
         width: auto;
     }
-    .options{
-        font-size: 8px;
-    } 
-
-    .options i{
-        display:block;
-        margin: auto;
-        padding:15%;
-        text-align: center;
-    }
-
-    .options i:first-child{
-        margin-right: 40px;
-    }
-    
-    .options i:last-child{
-        margin-left: 40px;
-    }
-
-    .header{
-        float:left;
-    }
-
-    .header h1{
-        text-align: center;
-        font-size: 18px;
-    }
-
     #score-area{
-        float:left;
-        margin-left: -30%;
-        font-size: 14px;
-    }
-}  
+        position: relative;
+        left:0;
+        top:30%
 
-
-@media (max-width: 210px ){
-    .options{
-        width:45%;
-        float:left;
-        font-size: 5px;
-    }  
-    .content{
-        text-align: left;
-        margin:auto;
     }
 
-    .header{
-        text-align: left;
+    @media (max-width: 500px) {
+        .options i {
+            font-size: 60px;
+        }
+
     }
 
-    .header h1{
-        text-align: left;
-        font-size: 12px;
+    @media (max-width: 390px) {
+        .options {
+            font-size: 50px;
+        }
+
+        .options i {
+            display: block;
+            margin: auto;
+            padding: 3%;
+            text-align: center;
+        }
+
+        .options i:first-child {
+            margin-right: 10px;
+        }
+
+        .options i:last-child {
+            margin-left: 10px;
+        }
+
+        .header h1 {
+            text-align: center;
+           
+        }
+
+        #score-area{
+            position: relative;
+            left:0;
+            top:20%
+        }
     }
 
-}  
+    @media (max-width: 280px) {
+
+        #score-area{
+            position: relative;
+            left:0;
+            top:15%
+        }
+    }
