@@ -1,6 +1,5 @@
 const choices = document.getElementsByClassName("choice")
 const replay = document.getElementById("replay")
-const popup = documet.getElementById("myPopup")
 
 /** The start game function calls all the functions when the game starts */
 // start game
@@ -47,10 +46,6 @@ function getWinner(p, c) {
     }
 
 }
-/** add popup button to tell the player when he wins or lose */
-function popup(){
-
-}
 /**the incrment function increment a user scores when they lose, win or if its a draw */
 // show scoreboard area and increment score
 function incrementWon() {
@@ -72,7 +67,11 @@ function incrementLost() {
 // check the scores for losers and winners
 function checkScore(winner) {
     if (winner === "win") {
+        // increment player score
         incrementWon();
+        // show popup
+        
+
     } else if (winner === "draw") {
         incrementDraw();
     } else {
@@ -87,6 +86,9 @@ function replayGame() {
     document.getElementById("draw").innerText = 0
     document.getElementById("lost").innerText = 0
 }
+
+/** add popup button to tell the player when he wins or lose */
+
 /**this event listens for whan a user interacts with game and the computer will listen and respond */
 // event listeners
 for (let choice of choices) {
