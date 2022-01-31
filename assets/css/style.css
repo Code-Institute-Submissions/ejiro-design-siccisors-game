@@ -45,6 +45,24 @@ body {
     color: rgb(99, 131, 131);
 }
 
+/* add popup button */
+.popup{
+    position:relative;
+    display:inline-block;
+    cursor:pointer;
+    background-color: rgb(72, 90, 90);
+    border-radius: 6px;
+    width:100px;
+    color:white;
+    font-size: 12px;
+    text-align: center;
+    font-family:montserrat, Arial, Helvetica, sans-serif;
+}
+.popup .popuptext{
+    visibility: hidden;
+    bottom:130%;
+    z-index: 1;
+}
 
 /* style the restart button */
 .replay-btn {

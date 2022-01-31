@@ -1,5 +1,6 @@
 const choices = document.getElementsByClassName("choice")
 const replay = document.getElementById("replay")
+const popup = documet.getElementById("myPopup")
 
 /** The start game function calls all the functions when the game starts */
 // start game
@@ -29,7 +30,7 @@ function getWinner(p, c) {
         return "draw";
     } else if (p === "rock") {
         if (c === 'paper') {
-            return "win"
+            return "win";
         }
     } else if (p === "paper") {
         if (c === "scissors") {
@@ -44,6 +45,10 @@ function getWinner(p, c) {
             return "lost"
         }
     }
+
+}
+/** add popup button to tell the player when he wins or lose */
+function popup(){
 
 }
 /**the incrment function increment a user scores when they lose, win or if its a draw */
