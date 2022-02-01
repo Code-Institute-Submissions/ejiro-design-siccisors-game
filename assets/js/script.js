@@ -1,5 +1,6 @@
 const choices = document.getElementsByClassName("choice")
 const replay = document.getElementById("replay")
+const mypopup = document.getElementById("myPopup")
 
 /** The start game function calls all the functions when the game starts */
 // start game
@@ -9,6 +10,7 @@ function startGame(event) {
     const computerGame = getComputerGame();
     const winner = getWinner(playerGame, computerGame);
     const checkScores = checkScore(winner, computerGame);
+    console.log(checkScores)
 }
 /** The comuter game function states the value what ever icon a user picks*/
 // get computer game
@@ -70,22 +72,21 @@ function checkScore(winner) {
         // increment player score
         incrementWon();
         // show popup
-        mypopup.innerHTML =`<h1 class="you-win">You Win</h1>
-        `;
+        mypopup.innerHTML =` </h1><strong>YOU WIN</strong></h1>
+        <p>computer choose rock</p> `;
     } else if (winner === "lost") {
         incrementLost();
         // show popup
-        mypopup.innerHTML =`<h1 class="you-lose">You Lose</h1>
-        `;
+        mypopup.innerHTML =` </h1><strong>YOU LOSE</strong></h1>
+        <p>You choose rock</p>`;
     } else {
         (winner === "draw")
         incrementDraw();
         // show popup
-        `<h1 It's a Draw</h1>
-        `;
+        `<h1 It's a Draw</h1>`;
     }
 
-    popup.style.display = "inline-block";
+    mypopup.style.display = "inline-block";
 }
 /** Restart button restarts the game if the user decides to play again */
 // replay button
