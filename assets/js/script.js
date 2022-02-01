@@ -72,36 +72,32 @@ function checkScore(winner, computerGame) {
         // increment player score
         incrementWon();
         // show popup
-        mypopup.innerHTML =` </h1 class="text-win"><strong>YOU WIN</strong></h1>
+        mypopup.innerHTML = ` </h1 class="text-win"><strong>YOU WIN</strong></h1>
         <i id="rock" fas fa-hand${computerGame} fa-7x"></i>
         <p>computer choose<strong> ${computerGame} </strong></p> `;
     } else if (winner === "lost") {
         incrementLost();
         // show popup
-        mypopup.innerHTML =` </h1 class="text-lose"><strong>YOU LOSE</strong></h1>
+        mypopup.innerHTML = ` </h1 class="text-lose"><strong>YOU LOSE</strong></h1>
         <i id="rock" fas fa-hand${computerGame} fa-7x"></i>
         <p>computer choose<strong> ${computerGame} </strong></p> `;
     } else {
         (winner === "draw")
         incrementDraw();
         // show popup 
-       `</h1><strong>IT'S A DRAW</strong></strong></h1>
+        `</h1><strong>IT'S A DRAW</strong></strong></h1>
        <i id="rock" fas fa-hand${computerGame} fa-7x"></i>
        <p>computer choose<strong> ${computerGame} </strong></p>`;
     }
 
-    // mypopup.style.display = "inline-block";
 }
 
 /** clear the popoup button to help the user restart the game */
-function clearPopup(event){
-    if ( mypopup.style.display === "inline-block"){
+function clearPopup(event) {
+    if (mypopup.style.display === "inline-block") {
         mypopup.style.display = "none"
-        console.log('hide')
-    }
-    else{
-        mypopup.style.display="inline-block"
-        console.log(event.target)
+    } else {
+        mypopup.style.display = "inline-block"
     }
 }
 
@@ -120,4 +116,3 @@ for (let choice of choices) {
 }
 replay.addEventListener("click", replayGame)
 window.addEventListener("click", clearPopup)
-
