@@ -67,23 +67,27 @@ function incrementLost() {
 }
 /** this function checks and increment a user score if they win or lose */
 // check the scores for losers and winners
-function checkScore(winner) {
+function checkScore(winner, computerGame) {
     if (winner === "win") {
         // increment player score
         incrementWon();
         // show popup
-        mypopup.innerHTML =` </h1><strong>YOU WIN</strong></h1>
-        <p>computer choose rock</p> `;
+        mypopup.innerHTML =` </h1 class="text-win"><strong>YOU WIN</strong></h1>
+        <i id="rock" fas fa-hand${computerGame} fa-7x"></i>
+        <p>computer choose<strong> ${computerGame} </strong></p> `;
     } else if (winner === "lost") {
         incrementLost();
         // show popup
-        mypopup.innerHTML =` </h1><strong>YOU LOSE</strong></h1>
-        <p>You choose rock</p>`;
+        mypopup.innerHTML =` </h1 class="text-lose"><strong>YOU LOSE</strong></h1>
+        <i id="rock" fas fa-hand${computerGame} fa-7x"></i>
+        <p>computer choose<strong> ${computerGame} </strong></p> `;
     } else {
         (winner === "draw")
         incrementDraw();
-        // show popup
-       `<h1> It's a Draw</h1>`;
+        // show popup 
+       `</h1><strong>IT'S A DRAW</strong></strong></h1>
+       <i id="rock" fas fa-hand${computerGame} fa-7x"></i>
+       <p>computer choose<strong> ${computerGame} </strong></p>`;
     }
 
     mypopup.style.display = "inline-block";
