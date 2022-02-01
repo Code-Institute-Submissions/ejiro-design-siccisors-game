@@ -5,7 +5,7 @@
 Rock Paper Scissors is a zero sum game that is usually played by two people using their hands and no tools. The idea is to make shapes with an outstretched hand where each shape will have a certain degree of power and will lead to an outcome.
 
 ### *Screenshot for mockup*
-![](assets/readme-images/Screenshot.png)
+![](assets/readme-images/image-mockup.png)
 ___
 
 ### *Screenshot of finished site*
@@ -19,33 +19,23 @@ ___
 
 ------
 
-## Release History
-
-We continually 
-
-
+## Feature Icons
+![](assets/readme-images/Screenshot-icons.png)
+```
+Rock, Scissors, Paper, are icons that a user clicks and the computer responds to the user
+````
 ------
 
-## FAQ about the uptime script
+## Score Area
+![](assets/readme-images/Screenshot-score-area.png)
+The score area increments when a user wins, lose, or when it is a draw
 
-**Why have you added this script?**
-
-
-
-**How will this affect me?**
-
-For e
-
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-
-
+## Popup Button
+![](assets/readme-images/Screenshot-icons-popup.png)
+- This is a button pops up when a player or computer wins, lose or when it is a draw 
+- The button pops out when a user clicks any other thing on the site or clicks restart to restart the game
 ---
+
+
 
 
