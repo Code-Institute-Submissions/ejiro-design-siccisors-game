@@ -36,6 +36,10 @@ The score area increments when a user wins, lose, or when it is a draw
 - The button pops out when a user clicks any other thing on the site or clicks restart to restart the game
 ---
 
+## Restart button
+![](assets/readme-images/Screenshot-restart.png)
+- This is a button restarts the game
+---
 
 
 
