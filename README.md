@@ -1,6 +1,6 @@
 # ROCK PAPER SCISSORS
 
-## *Introduction*
+## Introduction
 
 Rock Paper Scissors is a zero sum game that is usually played by two people using their hands and no tools. The idea is to make shapes with an outstretched hand where each shape will have a certain degree of power and will lead to an outcome.
 
@@ -40,6 +40,18 @@ The score area increments when a user wins, lose, or when it is a draw
 ![](assets/readme-images/Screenshot-restart.png)
 - This is a button restarts the game
 ---
+## Testing
+### Validator Testing
+- CSS:
+- HTML:
+
+## Unfixed Bugs
+
+## Deployment
+
+## Credit
+
+
 
 
 
