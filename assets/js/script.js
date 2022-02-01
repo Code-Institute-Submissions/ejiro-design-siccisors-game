@@ -10,7 +10,7 @@ function startGame(event) {
     const computerGame = getComputerGame();
     const winner = getWinner(playerGame, computerGame);
     const checkScores = checkScore(winner, computerGame);
-    console.log(checkScores, clearPopup)
+    console.log(checkScores)
 }
 /** The comuter game function states the value what ever icon a user picks*/
 // get computer game
@@ -93,6 +93,11 @@ function checkScore(winner) {
 function clearPopup(event){
     if (event.target === mypopup){
         mypopup.style.display = "none"
+        console.log('hide')
+    }
+    else{
+        mypopup.style.display="inline-block"
+        console.log(event.target)
     }
 }
 
