@@ -10,7 +10,7 @@ function startGame(event) {
     const computerGame = getComputerGame();
     const winner = getWinner(playerGame, computerGame);
     const checkScores = checkScore(winner, computerGame);
-    console.log(checkScores)
+    console.log(checkScores, clearPopup)
 }
 /** The comuter game function states the value what ever icon a user picks*/
 // get computer game
@@ -83,11 +83,19 @@ function checkScore(winner) {
         (winner === "draw")
         incrementDraw();
         // show popup
-        `<h1 It's a Draw</h1>`;
+       `<h1> It's a Draw</h1>`;
     }
 
     mypopup.style.display = "inline-block";
 }
+
+/** clear the popoup button to help the user restart the game */
+function clearPopup(event){
+    if (event.target === mypopup){
+        mypopup.style.display = "none"
+    }
+}
+
 /** Restart button restarts the game if the user decides to play again */
 // replay button
 function replayGame() {
@@ -96,12 +104,11 @@ function replayGame() {
     document.getElementById("lost").innerText = 0
 }
 
-/** add popup button to tell the player when he wins or lose */
-
 /**this event listens for whan a user interacts with game and the computer will listen and respond */
 // event listeners
 for (let choice of choices) {
     choice.addEventListener("click", startGame)
 }
 replay.addEventListener("click", replayGame)
+window.addEventListener("click", clearPopup)
 
