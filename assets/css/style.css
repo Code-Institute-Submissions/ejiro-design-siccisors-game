@@ -49,8 +49,7 @@ body {
 /* add popup button */
 .popup{
     position:relative;
-    display:inline-block;
-    display: none;
+    display:none;
     cursor:pointer;
     background-color: rgb(72, 90, 90);
     border-radius: 6px;
