@@ -90,12 +90,12 @@ function checkScore(winner, computerGame) {
        <p>computer choose<strong> ${computerGame} </strong></p>`;
     }
 
-    mypopup.style.display = "inline-block";
+    // mypopup.style.display = "inline-block";
 }
 
 /** clear the popoup button to help the user restart the game */
 function clearPopup(event){
-    if (event.target === mypopup){
+    if ( mypopup.style.display === "inline-block"){
         mypopup.style.display = "none"
         console.log('hide')
     }
