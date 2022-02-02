@@ -56,10 +56,16 @@ THE W3 CSS VALIDATOR:
 ## Unfixed Bugs
 
 ## Deployment
+- site was deployed to github pages using the necessary steps, attached is a link below
+https://ejiro-design.github.io/siccisors-game/
 
 ## Credit
 - Solarwinds Pingdom
-- 
+- The World Rock Paper Scissors Association (WRPSA)
+- Digital Redneck | Vil Pietersen
+- Travarsey Media on YouTube
+- Buzz feed muiltplayer on YouTube
+- freeCodeCamp.com on YouTube
 
 
 
