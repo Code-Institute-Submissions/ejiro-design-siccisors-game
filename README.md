@@ -41,6 +41,9 @@ The score area increments when a user wins, lose, or when it is a draw
 - This is a button restarts the game
 ---
 ## Testing
+![](assets/readme-images/Screenshot-performance.png)
+- Performance view: it previews the performance grade, page size, load time and request.
+
 ### Validator Testing
 - CSS:
 - HTML:
