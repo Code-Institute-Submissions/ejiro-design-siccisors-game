@@ -5,11 +5,11 @@
 Rock Paper Scissors is a zero sum game that is usually played by two people using their hands and no tools. The idea is to make shapes with an outstretched hand where each shape will have a certain degree of power and will lead to an outcome.
 
 ### *Screenshot for mockup*
-![](assets/readme-images/image-mockup.png)
+![](readme-images/image-mockup.png)
 ___
 
 ### *Screenshot of finished site*
-![](assets/readme-images/Screenshot.png)
+![](readme-images/Screenshot-icons-popup.png)
 ___
 
 ## *Shape of rock, scissors and paper*
@@ -20,28 +20,33 @@ ___
 ------
 
 ## Feature Icons
-![](assets/readme-images/Screenshot-icons.png)
+![](readme-images/Screenshot-icons.png)
 ```
 Rock, Scissors, Paper, are icons that a user clicks and the computer responds to the user
 ````
 ------
 
 ## Score Area
-![](assets/readme-images/Screenshot-score-area.png)
+![](readme-images/Screenshot-score-area.png)
 The score area increments when a user wins, lose, or when it is a draw
 
 ## Popup Button
-![](assets/readme-images/Screenshot-icons-popup.png)
+![](readme-images/Screenshot-icons-popup.png)
 - This is a button pops up when a player or computer wins, lose or when it is a draw 
 - The button pops out when a user clicks any other thing on the site or clicks restart to restart the game
 ---
 
 ## Restart button
-![](assets/readme-images/Screenshot-restart.png)
+![](readme-images/Screenshot-restart.png)
 - This is a button restarts the game
 ---
 ## Testing
-![](assets/readme-images/Screenshot-performance.png)
+- step1:
+- step2:
+- step3:
+- step4:
+
+![](readme-images/Screenshot-performance.png)
 - Performance view: it previews the performance grade, page size, load time and request.
 
 ### Validator Testing
@@ -53,11 +58,15 @@ THE W3 CSS VALIDATOR:
 - End tag for body seen, but there were unclosed elements From line 36, column 1; to line 36, column 7. and was corrected
 - Unclosed element div, From line 15, column 5; to line 15, column 22, and was corrected.
 
-## Unfixed Bugs
+## Unfixed Bugs 
 
 ## Deployment
 - site was deployed to github pages using the necessary steps, attached is a link below
 https://ejiro-design.github.io/siccisors-game/
+
+## Technology
+
+##
 
 ## Credit
 - Solarwinds Pingdom
