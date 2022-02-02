@@ -45,7 +45,10 @@ The score area increments when a user wins, lose, or when it is a draw
 - Performance view: it previews the performance grade, page size, load time and request.
 
 ### Validator Testing
-- CSS:
+THE W3 CSS VALIDATOR:
+- One error was found when pass through the W3C Validator
+- Value Error : on line 119, to put a unit after a number 
+
 - HTML:
 
 ## Unfixed Bugs
@@ -53,7 +56,8 @@ The score area increments when a user wins, lose, or when it is a draw
 ## Deployment
 
 ## Credit
-
+- Solarwinds Pingdom
+- 
 
 
 
