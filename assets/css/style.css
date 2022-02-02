@@ -191,11 +191,5 @@ body {
         .popuptext {
             top: -40%;
         }
-
-        #score-area {
-            position: relative;
-            left: 0;
-            top: 10%
-        }
     }
 }
