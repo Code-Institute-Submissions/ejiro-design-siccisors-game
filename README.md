@@ -40,11 +40,11 @@ The score area increments when a user wins, lose, or when it is a draw
 ![](readme-images/Screenshot-restart.png)
 - This is a button restarts the game
 ---
-## Testing
-- step1:
-- step2:
-- step3:
-- step4:
+## Testing the site
+- step1: the user clicks on rock
+- step2: the computer clicks paper
+- step3: the popup message alerts the user of scores
+- step4: the score area changes and shows the winner or the loser.
 
 ![](readme-images/Screenshot-performance.png)
 - Performance view: it previews the performance grade, page size, load time and request.
@@ -58,15 +58,19 @@ THE W3 CSS VALIDATOR:
 - End tag for body seen, but there were unclosed elements From line 36, column 1; to line 36, column 7. and was corrected
 - Unclosed element div, From line 15, column 5; to line 15, column 22, and was corrected.
 
-## Unfixed Bugs 
+## Unfixed Bugs
+- 
 
 ## Deployment
 - site was deployed to github pages using the necessary steps, attached is a link below
+
 https://ejiro-design.github.io/siccisors-game/
 
 ## Technology
-
-##
+- Github: this is use to deploy the pages
+- CSS: this for styling the site
+- HTML: this is for the site structure
+- JS: this is for site interaction between user and the computer
 
 ## Credit
 - Solarwinds Pingdom
