@@ -6,10 +6,10 @@ const mypopup = document.getElementById("myPopup")
 // start game
 function startGame(event) {
     replay.style.display = "inline-block"
-    const playerGame = event.target.id
-    const computerGame = getComputerGame();
-    const winner = getWinner(playerGame, computerGame);
-    const checkScores = checkScore(winner, computerGame);
+    let playerGame = event.target.id
+    let computerGame = getComputerGame();
+    let winner = getWinner(playerGame, computerGame);
+    let checkScores = checkScore(winner, computerGame);
     console.log(checkScores)
 }
 /** The comuter game function states the value what ever icon a user picks*/
@@ -26,21 +26,21 @@ function getComputerGame() {
 }
 /**the winner function determines the icon to win and to lose when playing the game  */
 // getting the winner
-function getWinner(p, c) {
-    if (p === c) {
+function getWinner(playerSelection, computerSelection) {
+    if (playerSelection === computerSelection) {
         return "draw";
-    } else if (p === "rock") {
-        if (c === 'paper') {
+    } else if (playerSelection === "rock") {
+        if (computerSelection === 'paper') {
             return "win";
         }
-    } else if (p === "paper") {
-        if (c === "scissors") {
+    } else if (playerSelection === "paper") {
+        if (computerSelection === "scissors") {
             return "win"
         } else {
             return "lost"
         }
-    } else if (p === "scissors") {
-        if (c === "rock") {
+    } else if (playerSelection === "scissors") {
+        if (computerSelection === "rock") {
             return "win"
         } else {
             return "lost"
