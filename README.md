@@ -9,7 +9,7 @@ Rock Paper Scissors is a zero sum game that is usually played by two people usin
 ___
 
 ### *Screenshot of finished site*
-![](readme-images/Screenshot-icons-popup.png)
+![](readme-images/Screenshot.png)
 ___
 
 ## *Shape of rock, scissors and paper*
