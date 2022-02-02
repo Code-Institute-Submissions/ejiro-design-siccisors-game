@@ -41,17 +41,19 @@ The score area increments when a user wins, lose, or when it is a draw
 - This is a button restarts the game
 ---
 ## Testing the site
-- step1: the user clicks on rock
-- step2: the computer clicks paper
-- step3: the popup message alerts the user of scores
-- step4: the score area changes and shows the winner or the loser.
+- *Step1:* the user clicks on rock
+- *Step2:* the computer clicks paper
+- *Step3:* the popup message alerts the user of scores
+- *Step4:* the score area changes and shows the winner or the loser.
 
 ![](readme-images/Screenshot-performance.png)
 - Performance view: it previews the performance grade, page size, load time and request.
 
-### Validator Testing
-THE W3 CSS VALIDATOR:
-- One error was found when pass through the W3C Validator
+## Validator Testing
+## The W3 CSS Validator:
+- One error was found when pass through the 
+
+### W3C Validator
 - Value Error : on line 119, to put a unit after a number 
 
 - NU HTML Checker: 2errors found
@@ -63,8 +65,14 @@ THE W3 CSS VALIDATOR:
 
 ## Deployment
 - site was deployed to github pages using the necessary steps, attached is a link below
-
 https://ejiro-design.github.io/siccisors-game/
+
+- Step 1: go to repositories
+- step 2: click of the file 
+- step 3: go to settings
+- step 4: got to pages
+- step 5: click on the main branch and save
+- step 6: the site is publish 
 
 ## Technology
 - Github: this is use to deploy the pages
