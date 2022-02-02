@@ -104,9 +104,7 @@ function clearPopup(event) {
 /** Restart button restarts the game if the user decides to play again */
 // replay button
 function replayGame() {
-    document.getElementById("won").innerText = window.location.reload()
-    document.getElementById("draw").innerText = window.location.reload()
-    document.getElementById("lost").innerText = window.location.reload()
+   window.location.reload()
 }
 
 /**this event listens for whan a user interacts with game and the computer will listen and respond */
