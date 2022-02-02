@@ -47,10 +47,13 @@ it previews the performance grade, page size, load time and request.
 
 ## Testing
 - *Step1:* the user clicks on rock
+![](readme-images/user-story1.png)
 
-- *Step1:* the computer clicks paper
-- *Step2:* the popup message alerts the user of scores
-- *Step4:* the score area changes and shows the winner or the loser.
+- *Step2:* the computer clicks paper, the popup message alerts the user of scores
+![](readme-images/user-story2.png)
+
+- *Step3:* the score area changes and shows the score of the winner, lost and draw
+![](readme-images/user-story3.png)
 
 ### Validator Testing
 #### The W3 CSS Validator:
