@@ -50,6 +50,7 @@ body {
 .popuptext {
     position: relative;
     top: -22%;
+    left:40%;
     display: none;
     cursor: pointer;
     background-color: rgb(72, 90, 90);
