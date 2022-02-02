@@ -49,7 +49,9 @@ THE W3 CSS VALIDATOR:
 - One error was found when pass through the W3C Validator
 - Value Error : on line 119, to put a unit after a number 
 
-- HTML:
+- NU HTML Checker: 2errors found
+- End tag for body seen, but there were unclosed elements From line 36, column 1; to line 36, column 7. and was corrected
+- Unclosed element div, From line 15, column 5; to line 15, column 22, and was corrected.
 
 ## Unfixed Bugs
 
