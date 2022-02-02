@@ -85,7 +85,7 @@ function checkScore(winner, computerGame) {
         (winner === "draw")
         incrementDraw();
         // show popup 
-        `</h1><strong>IT'S A DRAW</strong></strong></h1>
+        mypopup.innerHTML=`</h1><strong>IT'S A DRAW</strong></strong></h1>
        <i id="rock" fas fa-hand${computerGame} fa-7x"></i>
        <p>computer choose<strong> ${computerGame} </strong></p>`;
     }
@@ -104,9 +104,9 @@ function clearPopup(event) {
 /** Restart button restarts the game if the user decides to play again */
 // replay button
 function replayGame() {
-    document.getElementById("won").innerText = 0
-    document.getElementById("draw").innerText = 0
-    document.getElementById("lost").innerText = 0
+    document.getElementById("won").innerText = window.reload
+    document.getElementById("draw").innerText = window.reload
+    document.getElementById("lost").innerText = window.reload
 }
 
 /**this event listens for whan a user interacts with game and the computer will listen and respond */
