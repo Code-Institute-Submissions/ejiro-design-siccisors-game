@@ -36,24 +36,27 @@ The score area increments when a user wins, lose, or when it is a draw
 - The button pops out when a user clicks any other thing on the site or clicks restart to restart the game
 ---
 
+## Performance view
+it previews the performance grade, page size, load time and request.
+![](readme-images/Screenshot-performance.png)
+
 ## Restart button
 ![](readme-images/Screenshot-restart.png)
 - This is a button restarts the game
 ---
-## Testing the site
+
+## Testing
 - *Step1:* the user clicks on rock
-- *Step2:* the computer clicks paper
-- *Step3:* the popup message alerts the user of scores
+
+- *Step1:* the computer clicks paper
+- *Step2:* the popup message alerts the user of scores
 - *Step4:* the score area changes and shows the winner or the loser.
 
-![](readme-images/Screenshot-performance.png)
-- Performance view: it previews the performance grade, page size, load time and request.
-
-## Validator Testing
-## The W3 CSS Validator:
+### Validator Testing
+#### The W3 CSS Validator:
 - One error was found when pass through the 
 
-### W3C Validator
+#### W3C Validator
 - Value Error : on line 119, to put a unit after a number 
 
 - NU HTML Checker: 2errors found
