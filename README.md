@@ -9,6 +9,7 @@ Rock Paper Scissors is a zero sum game that is usually played by two people usin
 ___
 
 ### *Screenshot of finished site*
+
 ![](readme-images/Screenshot.png)
 ___
 
@@ -38,6 +39,7 @@ The score area increments when a user wins, lose, or when it is a draw
 
 ## Performance view
 it previews the performance grade, page size, load time and request.
+
 ![](readme-images/Screenshot-performance.png)
 
 ## Restart button
@@ -47,12 +49,15 @@ it previews the performance grade, page size, load time and request.
 
 ## Testing
 - *Step1:* the user clicks on rock
+
 ![](readme-images/user-story1.png)
 
 - *Step2:* the computer clicks paper, the popup message alerts the user of scores
+
 ![](readme-images/user-story2.png)
 
 - *Step3:* the score area changes and shows the score of the winner, lost and draw
+
 ![](readme-images/user-story3.png)
 
 ### Validator Testing
